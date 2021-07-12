@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="BestsellingItemCell" customModule="SimpleBookApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="120" height="294"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="120" height="294"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="R3P-gm-vPM">
+                        <rect key="frame" x="0.0" y="0.0" width="120" height="180"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="180" id="vAb-U0-6ni"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cjM-Bz-KU3">
+                        <rect key="frame" x="0.0" y="190" width="120" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="kFL-MP-Hsc"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="author" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bKR-bX-DQN">
+                        <rect key="frame" x="0.0" y="234" width="120" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="de7-P7-2Db"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.81960784310000001" green="0.86666666670000003" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="xX1-1H-Tmg">
+                        <rect key="frame" x="0.0" y="259" width="90" height="16"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-fullStar" translatesAutoresizingMaskIntoConstraints="NO" id="Gb8-cD-wqL">
+                                <rect key="frame" x="0.0" y="0.0" width="16.5" height="16"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-fullStar" translatesAutoresizingMaskIntoConstraints="NO" id="Vrp-Mf-Sk4">
+                                <rect key="frame" x="18.5" y="0.0" width="16.5" height="16"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-fullStar" translatesAutoresizingMaskIntoConstraints="NO" id="bh0-jX-z1e">
+                                <rect key="frame" x="37" y="0.0" width="16" height="16"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-halfStar" translatesAutoresizingMaskIntoConstraints="NO" id="gFT-LU-NKg">
+                                <rect key="frame" x="55" y="0.0" width="16.5" height="16"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-emptyStar" translatesAutoresizingMaskIntoConstraints="NO" id="Gom-2J-UeY">
+                                <rect key="frame" x="73.5" y="0.0" width="16.5" height="16"/>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="90" id="tC9-Pc-Ir3"/>
+                            <constraint firstAttribute="height" constant="16" id="ycA-Bu-hSb"/>
+                        </constraints>
+                    </stackView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6 Reviews" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f9U-or-xJ9">
+                        <rect key="frame" x="0.0" y="282" width="57.5" height="12"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="12" id="hVm-RO-dvT"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.81960784310000001" green="0.86666666670000003" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="cjM-Bz-KU3" firstAttribute="top" secondItem="R3P-gm-vPM" secondAttribute="bottom" constant="10" id="7js-9S-1ix"/>
+                <constraint firstAttribute="trailing" secondItem="cjM-Bz-KU3" secondAttribute="trailing" id="FRs-ZZ-RXN"/>
+                <constraint firstItem="bKR-bX-DQN" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Fbp-nv-hQ2"/>
+                <constraint firstItem="f9U-or-xJ9" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="GO4-XD-66F"/>
+                <constraint firstItem="xX1-1H-Tmg" firstAttribute="top" secondItem="bKR-bX-DQN" secondAttribute="bottom" constant="10" id="P6c-gh-4FJ"/>
+                <constraint firstAttribute="bottom" secondItem="f9U-or-xJ9" secondAttribute="bottom" id="P8C-PH-LAe"/>
+                <constraint firstItem="xX1-1H-Tmg" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="R1h-FM-tL2"/>
+                <constraint firstItem="cjM-Bz-KU3" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="c3D-nj-ArZ"/>
+                <constraint firstItem="bKR-bX-DQN" firstAttribute="top" secondItem="cjM-Bz-KU3" secondAttribute="bottom" constant="4" id="eQM-7a-VAR"/>
+                <constraint firstAttribute="trailing" secondItem="R3P-gm-vPM" secondAttribute="trailing" id="i1s-Aw-3cC"/>
+                <constraint firstItem="f9U-or-xJ9" firstAttribute="top" secondItem="xX1-1H-Tmg" secondAttribute="bottom" constant="7" id="oyi-Jn-0tx"/>
+                <constraint firstItem="R3P-gm-vPM" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="pJU-Rn-6Ae"/>
+                <constraint firstItem="R3P-gm-vPM" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="rEu-pQ-GWE"/>
+                <constraint firstAttribute="trailing" secondItem="bKR-bX-DQN" secondAttribute="trailing" id="ubT-M9-doE"/>
+            </constraints>
+            <size key="customSize" width="50" height="198"/>
+            <connections>
+                <outlet property="authorLabel" destination="bKR-bX-DQN" id="483-qt-7mA"/>
+                <outlet property="bookImage" destination="R3P-gm-vPM" id="gqF-bb-pem"/>
+                <outlet property="titleLabel" destination="cjM-Bz-KU3" id="t7G-7g-wsU"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="100.44642857142857"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ic-emptyStar" width="16" height="16"/>
+        <image name="ic-fullStar" width="16" height="16"/>
+        <image name="ic-halfStar" width="16" height="16"/>
+    </resources>
+</document>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="StoryItemCell" customModule="SimpleBookApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="120" height="202"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="120" height="202"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qKO-IR-9Ha">
+                        <rect key="frame" x="0.0" y="0.0" width="120" height="180"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="180" id="RtW-jJ-SJd"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m0j-op-fZQ">
+                        <rect key="frame" x="0.0" y="0.0" width="120" height="180"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.50435390851355544" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="180" id="jwN-Mu-JOA"/>
+                        </constraints>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileImage" translatesAutoresizingMaskIntoConstraints="NO" id="tyn-of-kd1">
+                        <rect key="frame" x="38" y="158" width="44" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="GZ7-n6-gWv"/>
+                            <constraint firstAttribute="width" constant="44" id="dN1-6q-mqT"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Content" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sgB-1W-agd">
+                        <rect key="frame" x="10" y="26" width="100" height="106"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="Qb8-KU-MCU"/>
+                            <constraint firstAttribute="height" constant="106" id="pK6-vw-K7T"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="sgB-1W-agd" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="26" id="7wS-u2-kiV"/>
+                <constraint firstAttribute="trailing" secondItem="qKO-IR-9Ha" secondAttribute="trailing" id="CWI-od-yqP"/>
+                <constraint firstItem="sgB-1W-agd" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="JUd-yG-cQG"/>
+                <constraint firstItem="tyn-of-kd1" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="158" id="O5w-UH-lB5"/>
+                <constraint firstItem="m0j-op-fZQ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="SNy-if-BrO"/>
+                <constraint firstItem="qKO-IR-9Ha" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="aOw-I3-dJE"/>
+                <constraint firstItem="qKO-IR-9Ha" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ivD-K7-x7U"/>
+                <constraint firstAttribute="bottom" secondItem="tyn-of-kd1" secondAttribute="bottom" id="jEq-EB-DdS"/>
+                <constraint firstItem="tyn-of-kd1" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="siI-9Y-XkD"/>
+                <constraint firstItem="m0j-op-fZQ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="vhr-5C-MQ5"/>
+                <constraint firstAttribute="trailing" secondItem="m0j-op-fZQ" secondAttribute="trailing" id="xVX-cr-bhh"/>
+            </constraints>
+            <size key="customSize" width="50" height="204"/>
+            <connections>
+                <outlet property="bookImage" destination="qKO-IR-9Ha" id="vkh-1Y-6QK"/>
+                <outlet property="contentLabel" destination="sgB-1W-agd" id="qTJ-dR-2nC"/>
+                <outlet property="profileImage" destination="tyn-of-kd1" id="Pjt-Zi-cXy"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="102.45535714285714"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="profileImage" width="360" height="360"/>
+    </resources>
+</document>
